@@ -1,0 +1,55 @@
+/* pages/index/type_list.wxss */
+page {
+  padding: 0rpx 35rpx;
+  width: 680rpx;
+}
+
+.nodata{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 70%;
+}
+
+.nodata image{
+  width: 70rpx;
+  height: 70rpx;
+}
+
+.nodata text{
+  margin-top: 10rpx;
+  font-size: 24rpx;
+  opacity: .6
+}
+
+.recommend image {
+  width: 680rpx;
+  height: 360rpx;
+  border-radius: 10rpx;
+}
+
+.hotproduct {
+  display: inline-block;
+  margin: 10rpx 20rpx;
+}
+
+.hotproduct .single {
+  width: 300rpx;
+  margin-top: 10rpx;
+}
+
+.hotproduct image {
+  width: 300rpx;
+  height: 180rpx;
+   box-shadow: 0rpx 0rpx 10px #888;
+}
+
+.hotproduct text {
+  font-size: 24rpx;
+  display: -webkit-box; /*关键属性*//* word-break: break-all; */
+  -webkit-box-orient: vertical; /* 关键属性 */
+  -webkit-line-clamp: 2; /* 关键属性 */
+  overflow: hidden; /* 关键属性 */
+  text-overflow: ellipsis; /* 超出内容显示省略号*/
+   opacity: .6;
+}

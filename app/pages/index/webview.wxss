@@ -1,0 +1,7 @@
+/* pages/index/webview.wxss */
+view {
+  padding: 20rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

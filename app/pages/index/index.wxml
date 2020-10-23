@@ -1,0 +1,42 @@
+<view class="view">
+  <swiper autoplay="true" circular="true" duration="1000" indicatorActiveColor="#434343" indicatorColor="#ccc" indicatorDots="true" interval="3000">
+    <swiper-item wx:for="{{banner}}" wx:key="*this">
+      <image src="{{item}}" mode="aspectFit"></image>
+    </swiper-item>
+  </swiper>
+
+
+  <!-- <view class="recommend">
+  <view class="hotproduct" wx:for="{{product}}">
+    <view class="single" bindtap='toDetail' data-id="{{item.category_id}}" data-type="{{item.name}}">
+      <image src="{{item.img}}" mode="cover"></image>
+      <text class="name">{{item.name}}</text>
+    </view>
+  </view>
+</view> -->
+<view class="ibanner">
+    <navigator class="flex3" url="/pages/index/webview?link={{item.src}}" wx:for="{{catelog}}" wx:key="*this" hover-class="none">
+      <image class="ibanimg" mode="aspectFill" src="/image/catelog.jpg"></image>
+      <view class="ibanzname gobyndsingle">{{item.title}}</view>
+    </navigator>
+  </view>
+
+  <view class="recommend">
+    <view class="hotproduct" wx:for="{{product}}">
+      <view class="single" bindtap='toDetail' data-id="{{item.id}}" data-type="{{item.name}}">
+        <image class="image" src="{{item.img}}" mode="aspectFill"></image>
+        <view class="name">
+          <image src="{{item.icon}}"></image>
+          <text class="name">{{item.name}}</text>
+        </view>
+
+      </view>
+    </view>
+  </view>
+</view>
+
+
+
+<view class="copyright">
+  <text>游悦网络科技提供技术支持</text>
+</view>

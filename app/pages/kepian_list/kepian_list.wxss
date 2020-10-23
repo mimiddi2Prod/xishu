@@ -1,0 +1,53 @@
+/* pages/kepian_list/kepian_list.wxss */
+.view {
+  padding: 0rpx 35rpx;
+  width: 680rpx;
+}
+
+swiper {
+  /* height: 300rpx; */
+  height: 450rpx;
+  width: 660rpx;
+  margin-left: 10rpx;
+  margin-bottom: 20rpx;
+  margin-top: 20rpx;
+  border-radius: 10rpx;
+}
+
+swiper-item {
+  /* height: 300rpx; */
+  height: 450rpx;
+  width: 660rpx;
+  border-radius: 10rpx;
+}
+
+swiper-item image {
+  /* height: 300rpx; */
+  height: 450rpx;
+  width: 660rpx;
+  border-radius: 10rpx;
+}
+
+.list {
+  display: flex;
+  flex-direction: row;
+  align-content: flex-start;
+  margin-bottom: 20rpx;
+}
+
+.list image {
+  width: 260rpx;
+  height: 160rpx;
+  margin-right: 10rpx;
+  flex-shrink: 0;
+}
+
+.list view {
+  font-size: 28rpx;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  opacity: .6;
+}

@@ -1,0 +1,13 @@
+<!--pages/kepian_list/kepian_list.wxml-->
+<view class="view">
+  <swiper autoplay="true" circular="true" duration="1000" indicatorActiveColor="#434343" indicatorColor="#ccc" indicatorDots="true" interval="3000">
+    <swiper-item wx:for="{{banner}}" wx:key="*this">
+      <image src="{{item}}" mode="aspectFit"></image>
+    </swiper-item>
+  </swiper>
+
+  <view class="list" wx:for="{{show_list}}" wx:key="*this" bindtap="toDetail" data-type="{{item.name}}" data-id="{{item.commodity_id}}">
+    <image src="{{item.img}}" mode="aspectFill"></image>
+    <view>{{item.name}}</view>
+  </view>
+</view>

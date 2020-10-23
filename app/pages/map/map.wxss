@@ -1,0 +1,12 @@
+/* pages/map/map.wxss */
+map{
+  width: 100%;
+  height: 800rpx;
+}
+
+button{
+  position: fixed;
+  right: 20rpx;
+  bottom: 60rpx;
+  z-index: 6;
+}

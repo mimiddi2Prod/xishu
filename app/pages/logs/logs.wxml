@@ -1,0 +1,42 @@
+<image class="avatarImg" src="{{img}}" mode="widthFix"></image>
+
+<view class="top" wx:for="{{contact_us}}" wx:key="*this">
+  <view class="userInfo color">
+    <view class="welcome">
+      <view class="name"><text>{{item.name}}</text></view>
+      <view class="line" bindtap='call' data-text="{{item.tel}}">
+        <view class="icon_text">
+          <image src="../../image/shouji.png"></image>
+          <text class="font30">{{item.tel}}</text>
+        </view>
+        <button hover-class="none">拨打我们</button>
+      </view>
+      <view class="line" bindtap='Clipboar' data-text="{{item.mail}}">
+        <view class="icon_text">
+          <image src="../../image/wechat.png"></image>
+          <text class="font30">{{item.mail}}</text>
+        </view>
+
+        <button hover-class="none">复制微信号</button>
+      </view>
+      <view class="line marBtn" bindtap='routePlan'>
+        <view class="icon_text">
+          <image src="../../image/daohang.png"></image>
+          <text class="font30">Toher喜树</text>
+        </view>
+
+        <button hover-class="none">点击导航</button>
+      </view>
+    </view>
+  </view>
+</view>
+
+<view class="top" style="margin-bottom:30rpx">
+  <view class="userInfo color">
+    <view class="welcome">
+      <view class="line">
+        <text class="font36">{{content}}</text>
+      </view>
+    </view>
+  </view>
+</view>

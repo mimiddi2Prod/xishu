@@ -1,0 +1,3 @@
+<!--pages/index/webview.wxml-->
+<view wx:if="{{!src}}">敬请期待</view>
+<web-view src="{{src}}" wx:else></web-view>

@@ -1,0 +1,39 @@
+<!-- <view class="top">
+  <view class="userInfo">
+    <image class="avatarImg" src="https://gss2.bdstatic.com/-fo3dSag_xI4khGkpoWK1HF6hhy/baike/w%3D268%3Bg%3D0/sign=b3af3750dbc8a786be2a4d085f32ae00/730e0cf3d7ca7bcb9cf65085b4096b63f724a88f.jpg" mode="cover"></image>
+    <view class="welcome">
+      <text class="userName font30">111</text>
+    </view>
+  </view>
+</view> -->
+<!-- <view wx:for="{{list}}" wx:key="*this"> -->
+<view class="top">
+  <view class="userInfo">
+    <view class="content">
+      <!-- <rich-text class="font30" nodes="{{content}}"></rich-text> -->
+      <text class="font30">{{content}}</text>
+    </view>
+  </view>
+</view>
+
+<!-- <view class="price">
+  <view class="userInfo">
+    <view class="content2">
+      <text style="font-size: 26rpx;">{{price}} 元</text>
+    </view>
+  </view>
+</view>
+
+<view class="huohao">
+  <view class="userInfo">
+    <view class="content2">
+      <text style="font-size: 26rpx;">货号：{{item_number}}</text>
+    </view>
+  </view>
+</view> -->
+<view class="a">
+<image class="avatarImg" wx:for="{{imglist}}" wx:key="*this" src="{{item}}" data-img="{{item}}" mode="widthFix" bindtap='bigimg'></image>
+</view>
+
+
+<!-- </view> -->

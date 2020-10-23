@@ -1,0 +1,8 @@
+<view class="recommend">
+  <view class="hotproduct" wx:for="{{show_list}}">
+    <view class="single" bindtap='toDetail' data-type="{{item.name}}" data-id="{{item.commodity_id}}">
+      <image src="{{item.img}}" mode="aspectFill"></image>
+      <text style="display:flex;flex-direction:row;justify-content:flex-end" class="name">{{item.name}}</text>
+    </view>
+  </view>
+</view>

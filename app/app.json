@@ -1,0 +1,55 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/index/category_list",
+    "pages/index/type_list",
+    "pages/index/detail",
+    "pages/index/webview",
+    "pages/logs/logs",
+    "pages/map/map",
+    "pages/kepian_list/kepian_list"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#FFF",
+    "navigationBarTitleText": "喜树工作室",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [{
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "image/shouye.png",
+        "selectedIconPath": "image/shouye-active.png"
+      },
+      {
+        "pagePath": "pages/kepian_list/kepian_list",
+        "text": "客片",
+        "iconPath": "image/kepian.png",
+        "selectedIconPath": "image/kepian-active.png"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "text": "联系",
+        "iconPath": "image/lianxi.png",
+        "selectedIconPath": "image/lianxi-active.png"
+      }
+    ],
+    "backgroundColor": "#fff",
+    "selectedColor": "#F5454A",
+    "color": "#cdcdcd",
+    "enablePullDownRefresh": false
+  },
+  "plugins": {
+    "routePlan": {
+      "version": "1.0.6",
+      "provider": "wx50b5593e81dd937a"
+    }
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序定位"
+    }
+  },
+  "sitemapLocation": "sitemap.json"
+}
