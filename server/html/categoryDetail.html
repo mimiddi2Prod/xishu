@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<title>喜树工作室</title>
+	<script type="text/javascript" src="../node_modules/vue/dist/vue.min.js"></script>
+	<script type="text/javascript" src="../jquery-3.3.1/jquery-3.3.1.min.js"></script>
+	<!-- <script type="text/javascript" src="../bootstrap/js/bootstrap.min.js" ></script> -->
+	<link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+	<script type="text/javascript" src="../js/login.js"></script>
+
+</head>
+
+<body>
+	<div id="menu" style="position: fixed;width: 100%;z-index: 10"></div>
+	
+	<div id="commodityInfo" style="transform: translateY(60px);">
+		<table class="table table-hover">
+			<thead>
+				<tr>
+					<th>排序</th>
+					<th>标题</th>
+					<th style="transform: translateX(6px);">图片</th>
+					<th style="transform: translateX(18px);">操作</th>
+				</tr>
+			</thead>
+			<tbody v-for="item in categoryDetail">
+				<tr>
+					<th scope="row" style="height: 40px;line-height: 40px;transform: translateX(6px);" v-on:click="toCommodityInfo(item.commodity_id)">{{item.order_num}}</th>
+					<td style="height: 40px;line-height: 40px" v-on:click="toCommodityInfo(item.commodity_id)">{{item.name}}</td>
+					<td v-on:click="toCommodityInfo(item.commodity_id)"><img class="img-rounded" style="width: 40px;height: 40px" v-bind:src="item.img" v-on:click="toCommodityInfo(item.commodity_id)"/></td>
+					<td style="height: 40px;line-height: 40px;"><a style="margin-right: 10px;color:green;cursor:pointer;" v-on:click="edit(item.commodity_id)">编辑</a><a style="color:red;cursor:pointer;"  v-on:click="delete_commodity(item.commodity_id)" data-toggle="modal" data-target="#myModal">删除</a></td>
+				</tr>
+			</tbody>
+		</table>
+		<div style="position: absolute;right: 20px">
+			<a class="btn btn-default" style="width: 200px" v-on:click="add()" role="button">添加</a>
+		</div>
+		<div style="position: absolute;right: 20px;margin-top: 40px;margin-bottom: 60px">
+			<a class="btn btn-default" style="width: 200px" onClick="javascript :history.back(-1);" role="button">返回</a>
+		</div>
+
+
+	</div>
+
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title" id="title">1</h4>
+            </div>
+            <div class="modal-body" id="content">1</div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                <button type="button" class="btn btn-primary" onclick="deletep()">确认</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal -->
+</div>
+
+	<script type="text/javascript" src='../js/categoryDetail.js'></script>
+</body>
+</html>
