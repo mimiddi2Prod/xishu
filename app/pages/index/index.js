@@ -15,7 +15,8 @@ Page({
       title: "花艺",
       src: "https://mp.weixin.qq.com/s/O0NPX41heqf3yI6R_oajiA"
     }, {
-      title: "门店"
+      title: "门店",
+      src: "https://mp.weixin.qq.com/s/Ki4qKfNG0_JhxsNHxVi5Vw"
     }]
   },
 
