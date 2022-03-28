@@ -4,8 +4,8 @@ let key = "H3PBZ-VOTWF-H2UJQ-NSEKS-SIHVQ-HFFXQ"
 let referer = "TOHER喜树" // 调用插件的app的名称
 let endPoint = JSON.stringify({
   name: "TOHER喜树",
-  latitude: "30.545221",
-  longitude: "104.085702"
+  latitude: "30.560544",
+  longitude: "104.150117"
 })
 Page({
 
