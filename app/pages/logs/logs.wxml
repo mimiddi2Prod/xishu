@@ -19,14 +19,14 @@
 
         <button hover-class="none">复制微信号</button>
       </view>
-      <view class="line marBtn" bindtap='routePlan'>
+      <!-- <view class="line marBtn" bindtap='routePlan'>
         <view class="icon_text">
           <image src="../../image/daohang.png"></image>
           <text class="font30">Toher喜树</text>
         </view>
 
         <button hover-class="none">点击导航</button>
-      </view>
+      </view> -->
     </view>
   </view>
 </view>
